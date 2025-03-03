@@ -11,6 +11,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  height: 100vh;
+}
 
 .container {
   height: 100vh;
@@ -117,11 +120,12 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  right: 0;
+  width: 570px;
+  z-index: -1;
 }
 
 .bg {
   grid-area: bg;
   background-image: url(/img/image_login_2_1.png);
-  scale: 1.1;
 }
