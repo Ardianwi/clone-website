@@ -1,7 +1,10 @@
 :root {
+  /* Color */
   --primary-color: #fff;
   --secondary-color: #000;
   --third-color: #dedede;
+  /* Font */
+  --font-family: "Manrope", sans-serif;
 }
 
 * {
@@ -9,6 +12,116 @@
   padding: 0;
 }
 
-body {
+.container {
   height: 100vh;
+  display: grid;
+  grid-template-areas: "logo bg";
+  grid-template-columns: 0.5fr 1fr;
+  position: relative;
+}
+
+.logo {
+  grid-area: logo;
+  background-image: url(img/typo.png);
+  padding: 50px;
+  font-family: "Manrope", sans-serif;
+}
+.logo__title {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 5%;
+  line-height: 1.1;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+.logo__title-description {
+  font-size: 0.9rem;
+}
+.logo__hierarki {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.logo__description {
+  font-size: 0.9rem;
+  color: #b3b1b1;
+}
+
+.login__title-username {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  height: 20px;
+  padding: 14px 14px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.login__title-username input {
+  border: none;
+  width: 400px;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+.login__title-password {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  height: 20px;
+  padding: 14px 14px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.login__Password {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login__title-password img {
+  width: 15px;
+  height: 15px;
+}
+.login__title-password input {
+  border: none;
+  width: 400px;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+.login__ingatsaya {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #9c9b9b;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.button-next {
+  width: 400px;
+  height: 50px;
+  background-color: #fec32f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 80px;
+}
+.container a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.bg-ku {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.bg {
+  grid-area: bg;
+  background-image: url(/img/image_login_2_1.png);
+  scale: 1.1;
 }
