@@ -67,6 +67,9 @@ body {
   height: 40px;
   background-color: #f5f5f5;
 }
+.login__title-username input:focus {
+  outline: none;
+}
 .login__title-password {
   display: flex;
   align-items: center;
@@ -91,6 +94,9 @@ body {
   width: 400px;
   height: 40px;
   background-color: #f5f5f5;
+}
+.login__title-password input:focus {
+  outline: none;
 }
 .login__ingatsaya {
   margin-top: 10px;
