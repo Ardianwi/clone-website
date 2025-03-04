@@ -127,8 +127,8 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 570px;
   z-index: -1;
+  width: 700px;
 }
 
 .bg {
